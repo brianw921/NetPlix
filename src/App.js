@@ -1,6 +1,6 @@
 import React from 'react';
-import {instance} from './axios';
-import Row from 
+
+import Row from './Components/Row.js'
 import './App.css';
 
 function App() {
