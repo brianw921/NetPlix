@@ -1,6 +1,6 @@
-import React, { useState, useEffect}from 'react'
-import axios from '../axios.js'
-import './Row.css'
+import React, { useState, useEffect } from 'react';
+import axios from '../axios.js';
+import './Row.css';
 const poster_url = 'http://image.tmdb.org/t/p/original/';
 
 function Row({ title, fetchUrl, isLargeRow}) {
