@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <h1>Hey Brian {process.env.REACT_APP_HELLO}</h1>
-      <Row title="NetFlix Originals" fetchURL={requests.fetchNetflixOriginals}/>
-      <Row title="Trending Now" fetchURL={requests.fetchTrending}/>
+      <Row title="NetFlix Originals" fetchUrl={requests.fetchNetflixOriginals}/>
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending}/>
     </div>
   );
 }
