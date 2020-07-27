@@ -8,8 +8,13 @@ function App() {
   console.log(requests)
   return (
     <div className="App">
-      <h1>Hey Brian {process.env.REACT_APP_HELLO}</h1>
-      <Row title="NetFlix Originals" fetchUrl={requests.fetchNetflixOriginals}/>
+      {/* Nav */}
+      {/* Banner */}
+
+      <Row title="Netplix Originals" 
+      fetchUrl={requests.fetchNetflixOriginals}
+      isLargeRow={true}
+      />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending}/>
     </div>
   );
