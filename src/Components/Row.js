@@ -12,15 +12,15 @@ function Row({ title, fetchUrl, isLargeRow}) {
     useEffect(() => {
         async function fetchData(){
             const request = await axios.get(fetchUrl);
-            console.log("hi",request.data.results);
+            // console.log("hi",request.data.results);
             setMovies(request.data.results);
             return request
         };
         fetchData();
     }, [fetchUrl]);
-    // if empty array, it runs once.
     
-    console.log("hello",movies)
+    
+    // console.log("hello",movies)
     return (
         <div className="row">
             <h2>{title}</h2>
