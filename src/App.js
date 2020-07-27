@@ -5,6 +5,7 @@ import './App.css';
 import requests from './requests.js';
 
 function App() {
+  console.log(requests)
   return (
     <div className="App">
       <h1>Hey Brian {process.env.REACT_APP_HELLO}</h1>
