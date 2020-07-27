@@ -1,10 +1,26 @@
 .row-posters {
     display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
 }
+
+/* key the functionality of the scrollbar, but don't display the scrollbar */
+.row-posters::-webkit-scrollbar {
+    display: none;
+}
+
+
 .row-poster {
     object-fit: contain;
     
     width: 100%;
     max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
 }
 /* object-fit keeps the aspect ratio */
+
+.row-poster:hover {
+    transform: scale(1.08);
+}
