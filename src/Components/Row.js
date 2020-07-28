@@ -18,12 +18,12 @@ function Row({ title, fetchUrl, isLargeRow}) {
         };
         fetchData();
     }, [fetchUrl]);
-    
+    console.log("hello",title)
     
     // console.log("hello",movies)
     return (
         <div className="row">
-            <h2>{title}</h2>
+            <h2>{title} Title</h2>
             <div className="row-posters">
                 {/* Several Posters */}
                 {movies.map( (movie) => (
